@@ -18,7 +18,9 @@ int main() {
     // Start the levels
     if (level1()) {
       if (level2()) {
-	level3();
+	if (level3()) {
+	  level4();
+	}
       }
     }
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Define the expected passwords for each level
-PASSWORDS=("ph0wn2026" "starport" "top_floor")
+PASSWORDS=("ph0wn2026" "starport" "top_floor" "qrcode-solution.txt" )
 
 # Path to the crackme binary
 CRACKME="./crackme"
@@ -32,6 +32,11 @@ expect <<EOF
     # Level 3
     expect "Floor:" {
         send "${PASSWORDS[2]}\r"
+    }
+
+    # Level 4
+    expect "Filename:" {
+        send "${PASSWORDS[3]}\r"
     }
 
     # Wait for the program to finish

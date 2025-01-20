@@ -25,7 +25,7 @@ int level3() {
 
     if (correct && strlen(input) == sizeof(encrypted)/sizeof(char)) {
         printf("\nThe lift dings softly, and the doors open to reveal a golden floor interior.\n");
-        printf("Congratulations, you've completed this level!\n");
+        printf("Congratulations, you've completed this level! Will you manage to meet Pico at the next level?\n");
 	printf("Ph0wn CTF 2026 - March 13-14, 2026 | Visit us at ph0wn.org\n");
 	return 1;
     } else {
