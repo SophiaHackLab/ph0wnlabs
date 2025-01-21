@@ -1,44 +1,57 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <stdint.h>
 #include "base64.h"
 
-// Base64 decoding table
-static const char base64_table[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+char *base64_decode(const char *input) {
+    char command[256];
+    FILE *pipe;
+    char *output = NULL;
+    size_t output_size = 0;
 
-// Function to decode a base64 string
-char* base64_decode(const char* input) {
-    int len = strlen(input);
-    int padding = 0;
-    
-    if (input[len - 1] == '=')
-        padding++;
-    if (input[len - 2] == '=')
-        padding++;
-    
-    int decoded_len = (len * 3) / 4 - padding;
-    char* decoded = (char*)malloc(decoded_len + 1);
-    
-    int i = 0, j = 0;
-    unsigned char temp[4];
-    while (len--) {
-        if (*input == '=')
-            break;
-        temp[i++] = *input++;
-        if (i == 4) {
-            decoded[j++] = (temp[0] << 2) | (temp[1] >> 4);
-            decoded[j++] = (temp[1] << 4) | (temp[2] >> 2);
-            decoded[j++] = (temp[2] << 6) | temp[3];
-            i = 0;
+    // Prepare the command to decode base64
+    snprintf(command, sizeof(command), "echo %s | base64 -d", input);
+
+    // Open a pipe to the command
+    pipe = popen(command, "r");
+    if (!pipe) {
+        fprintf(stderr, "Failed to run base64 -d command.\n");
+        return NULL;
+    }
+
+    // Allocate initial memory for the output
+    size_t buffer_size = 128; // Start with a reasonable buffer size
+    output = malloc(buffer_size);
+    if (!output) {
+        fprintf(stderr, "Memory allocation failed.\n");
+        pclose(pipe);
+        exit(EXIT_FAILURE);
+    }
+
+    // Read the decoded output from the pipe
+    size_t len = 0;
+    while (fgets(output + len, buffer_size - len, pipe) != NULL) {
+        len += strlen(output + len);
+        // If the buffer is full, reallocate more space
+        if (len >= buffer_size - 1) {
+            buffer_size *= 2;
+            char *new_output = realloc(output, buffer_size);
+            if (!new_output) {
+                fprintf(stderr, "Memory reallocation failed.\n");
+                free(output);
+                pclose(pipe);
+                exit(EXIT_FAILURE);
+            }
+            output = new_output;
         }
     }
-    if (i) {
-        for (int k = i; k < 4; k++)
-            temp[k] = 0;
-        decoded[j++] = (temp[0] << 2) | (temp[1] >> 4);
-        if (i > 2)
-            decoded[j++] = (temp[1] << 4) | (temp[2] >> 2);
-    }
-    decoded[j] = '\0';
-    return decoded;
+
+    // Close the pipe
+    pclose(pipe);
+
+    // Null-terminate the output
+    output[len] = '\0';
+
+    return output;
 }
