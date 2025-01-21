@@ -32,3 +32,5 @@ So, we need to do the opposite with Python:
 >>> quit()
 ```
 </details>
+
+> We can't use `rahash2` with rotation of 0x1e because we'll loop from the end of the alphabet to the beginning which is different from adding/substracting 0x1e

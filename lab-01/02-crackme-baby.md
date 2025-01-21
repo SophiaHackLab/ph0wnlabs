@@ -38,6 +38,8 @@ Show the string at 0x00001199
 Rvfc
 ```
 
+### Solution with the evaluation operator 
+
 Use for example the evaluation operator to work out the expected password:
 
 ```
@@ -73,6 +75,21 @@ Continue for the next characters:
 
 You should get: `Q`, `u`, `e`, `b`, `e`, `c`.
 
+### Solution with rahash2
+
+Adding or substracting 1 to each character is close to an *alphabet rotation* if we don't fall in cases where we loop to the beginning of the alphabet.
+
+Check what `rahash2` can do (`man rahash2`):
+
+- Select algorithm `rot`: `-E rot`
+- Set the key: `-S s:1`
+
+```
+$ rahash2 -s Rvfcfd -E rot -S s:1
+Quebec
+```
+
+### Solution by invoking Python
 **Alternative**: invoke a Python:
 
 ```
