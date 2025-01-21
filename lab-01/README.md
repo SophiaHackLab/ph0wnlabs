@@ -22,7 +22,7 @@ Ph0wn News:
 ## Radare2
 
 - Install radare2: https://www.radare.org/n/radare2.html
-- Binary for my demo: **TODO**
+- Binary for my demo: `./bins/demo`
 
 10 commands to memorize:
 
@@ -45,7 +45,7 @@ References:
 
 ## Hack to meet Pico le Croco
 
-![https://pico.masdescrocodiles.fr](./images/pico-at-shl-300.png)
+![https://pico.masdescrocodiles.fr](../images/pico-at-shl-300.png)
 
 Instructions:
 

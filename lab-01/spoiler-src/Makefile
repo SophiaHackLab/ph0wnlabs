@@ -4,7 +4,7 @@ OBJ = crackme.o base64.o $(LEVELS)
 LEVELS = $(patsubst %.c, %.o, $(wildcard level*.c)) # Automatically find all levelN.c files
 
 # Target binary
-TARGET = crackme
+TARGET = meet-pico
 
 # Main target
 $(TARGET): $(OBJ)
@@ -20,6 +20,12 @@ base64.o: base64.c base64.h
 crackme.o: crackme.c base64.h
 	$(CC) $(CFLAGS) -c $< -o $@
 
+demo.o: demo.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+demo: demo.o
+	$(CC) demo.o -o $@
+
 # Clean up object files and the binary
 clean:
-	rm -f *.o $(TARGET)
+	rm -f *.o $(TARGET) demo
