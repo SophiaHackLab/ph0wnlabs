@@ -1,30 +1,30 @@
 # Ph0wn Labs 01
 
-Welcome to **Ph0wn Labs 01**! 
+:tada: Welcome to **Ph0wn Labs 01**! 
 
 1. Beginner tutorial on Radare2
-2. Hack to meet Pico le Croco -- with Radare2
+2. Hack to meet Pico le Croco :crocodile: -- with Radare2
 3. CTF, fun and more at https://ph0wn.shl.contact/
 
-Bonus Ideas *and earn a Pico le Croco sticker*:
+:bulb: Bonus Ideas *and earn a Pico le Croco sticker*:
 
-- Design the *SHL r2 cheatsheet* and share
-- 3D print an object for *Ph0wn Labs or r2*
+- :memo: Design the *SHL r2 cheatsheet* and share
+- 3D print an object in relation with this session
 - Create a *Windows* or *MacOS* crackme to reverse with r2
 
-Ph0wn News:
+:newspaper: Ph0wn News:
 
 - https://ph0wn.org
 - Discord: https://discord.gg/ddspM9deeu
-- Next CTF: March 13-14 20**26**
-- Want to contribute or sponsor? Contact @BetterCallPaul, @BlackB0x or @cryptax.
+- :date: Next CTF: March 13-14 20**26**
+- Want to contribute :pencil: or sponsor :dollar: ? Contact @BetterCallPaul, @BlackB0x or @cryptax.
 
 ## Radare2
 
 - Install radare2: https://www.radare.org/n/radare2.html
 - Binary for my demo: `./bins/demo`
 
-10 commands to memorize:
+10 commands to memorize: :fire:
 
 1. **Help**: `?`, or detailed help on a command `a?`, `pd?`...
 2. **Analyze**: `aa`, or deeper `aaa`, or even deeper `aaaa`...
@@ -37,7 +37,7 @@ Ph0wn News:
 9. **Flags**: r2 associates names to offsets (symbols, functions etc) and calls that *flags*. List all flags with `f`, or grep for a given name with `f~NAME`.
 10. **Search**: `/ STRING` search for `STRING` everywhere, `/i STRING` for case insensitive, and `/x 04030201` to search bytes
 
-References:
+:blue_book: References:
 
 - [r2wiki](https://r2wiki.readthedocs.io/en/latest/)
 - [The Official Radare2 Book](https://book.rada.re/refcard/intro.html)
@@ -54,7 +54,7 @@ Instructions:
 - Each level is independant. In this crackme, you are meant to disassemble and understand each function `level1`, `level2`, `level3` etc one after the other.
 - This is a *Beginner Tutorial*. **There is no difficult algorithm and no obfuscation.**
 
-Setup your laptop:
+Setup your laptop :computer: :
 
 - Install radare2: https://www.radare.org/n/radare2.html
 - `./bins/meet-pico` is an ELF binary for Linux. You only need to run the binary to confirm you passed levels. If you don't care about confirmation, you don't need anything apart Radare2. 
@@ -62,7 +62,7 @@ Setup your laptop:
 If you're not on Linux *and* want to run the ELF binary, use the *Ph0wn Labs* Docker container.
 
 - Install [Docker](https://docs.docker.com/get-started/get-docker/) and **Docker Compose**
-- Run the Docker container for Ph0wn Labs:
+- Run the Docker container :whale: for Ph0wn Labs:
 ```
 cd docker
 mkdir workspace
