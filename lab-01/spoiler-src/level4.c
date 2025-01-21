@@ -78,9 +78,14 @@ int level4() {
   int ret = 0;
   if (decoded != NULL && strcmp(decoded, "p1coEl1te") == 0) {
     printf("Congratulations!\n");
-    printf("You finally meet Pico le Croco!\n");
-    printf("Enjoy the rest of Ph0wn Labs with https://ph0wn.shl.contact\n");
-
+    printf("The door opens, and Pico le Croco is standing in front of you\n");
+    printf("with his charming smile. He says: \n");
+    printf("'Hi! Come in! It's so nice to meet new hackers!\n");
+    printf("\n");
+    printf("How about some CTF now? Head to https://ph0wn.shl.contact\n");
+    printf("Enjoy the rest of Ph0wn Labs!\n");
+    printf("Ph0wn CTF 2026 - March 13-14, 2026 | Visit us at ph0wn.org\n");
+    printf("======================== END =============================\n");
     ret = 1;
   } else {
     printf("%s\n", decoded);
