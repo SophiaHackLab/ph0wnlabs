@@ -3,4 +3,5 @@
 int level1();
 int level2();
 int level3();
+int level4();
 #endif

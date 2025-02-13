@@ -88,7 +88,6 @@ int level4() {
     printf("======================== END =============================\n");
     ret = 1;
   } else {
-    printf("%s\n", decoded);
     printf("Oops, that's not correct...\n");
   }
 
