@@ -1,0 +1,12 @@
+services:
+  tools-container:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: cryptax/ph0wnlabs-r2:2025.01
+    container_name: ph0wnlabs
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./workspace:/workspace
+    working_dir: /workspace

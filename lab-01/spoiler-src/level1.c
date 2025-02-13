@@ -14,6 +14,7 @@ int level1() {
     printf("Apartment tag: ");
 
     scanf("%19s", password);
+    printf("\n");
 
     if (strcmp(password, secret) == 0) {
         printf("Correct! Welcome to the next level.\n");
