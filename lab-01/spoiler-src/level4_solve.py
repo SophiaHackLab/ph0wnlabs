@@ -28,7 +28,7 @@ def save_fake_qr(filename, fake_qr):
 def main():
     # Check if the correct number of arguments are provided
     if len(sys.argv) != 3:
-        print("Usage: python generate_fake_qr.py <data_string> <filename>")
+        print("Usage: python level4_solve.py <data_string> <filename>")
         sys.exit(1)
 
     # Get the data and filename from the command-line arguments
