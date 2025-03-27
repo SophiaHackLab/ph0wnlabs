@@ -5,7 +5,7 @@
 1. [Installation of Pico SDK for Raspberry Pico](#install-pico-sdk)
 2. Get a *Ph0wn Pico le Croco* board
 3. Repair the :car: of *Pico le Croco* :crocodile: and [solve "Pico PCB 2"](#ph0wn-ctf-challenge) at https://ph0wn.shl.contact/
-4. [Implement, flash and share your best April Fool program for Raspberry Pico](#april-1st)
+4. [Implement, flash and share your best April Fools' Day program for Raspberry Pico](#april-1st)
 
 > At the end of the lab, please hand over the board to Paul, Nicolas or myself.
 > You can keep it only if you *swear* you'll be using it, otherwise, we need it for future labs, thanks!
@@ -44,7 +44,7 @@ export PICO_SDK_PATH=~/softs/pico/pico-sdk
 - Connect to [Ph0wn SHL CTF](https://ph0wn.shl.contact). Create an account if necessary.
 - Look for challenge "Pico PCB 2". Solve it!
 
-> If you already have a CTF environment, make sure you have a disassembler such as [Ghidra](https://github.com/NationalSecurityAgency/ghidra/releases)
+> If you already have a CTF environment, make sure you have a disassembler such as [Ghidra](https://github.com/NationalSecurityAgency/ghidra/releases).
 > If you have no CTF environment, you *can* just install Ghidra, but you'll be better off installing [Exegol](https://exegol.readthedocs.io/en/latest/) because it contains many useful tools.
 
 **Spoiler**: [challenge write-up](https://github.com/ph0wn/writeups/blob/master/2024/pico-pcb/solution/stage2/writeup.md). Wait till the end of the lab! :wink:
