@@ -1,0 +1,9 @@
+ph0wn labs #2: Programmation embarquée & challenges CTF ce mardi 1er avril 19h au SHL. 
+
+1. Apprenez à programmer le Raspberry Pico (RP2040)
+@. Résolvez le challenge Pico PCB 2 (ph0wn 2024) où la voiture de Pico le Croco ne démarre plus ! Nous vous guiderons pour sa réparation ... à coup de désassembleur
+3. Créez un firmware spécial "Pico 1er avril" et téléchargez le sur le PCB
+
+- N'oubliez pas votre laptop, il vous sera indispensable.
+- Vérifiez que votre laptop dispose d'un connecteur USB Type A pour le PCB, sinon venez avec un adaptateur.
+- Pré-installez un désassembleur tel que Ghidra, Radare2 etc. Une autre bonne idée est l'installation d'Exegol (https://exegol.readthedocs.io/en/latest/).
