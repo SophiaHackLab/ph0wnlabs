@@ -48,16 +48,21 @@ int main() {
     printf("                                \\__________/  \n");
     printf("\n\n");
     printf("A Ph0wn 2026, un flag ultra secret permettra de flagger\n");
-    printf("tous les challenges.\n");
-    printf("Mémorisez le bien: \n");
+    printf("tous les challenges. Mémorisez le bien: \n");
 
     for (int i=0;i<strlen(flag); i++) {
       printf("%c", flag[i]);
-      put_pixel(rand() % 16 ? 0 : 0xffffffff);
-      put_pixel(rand() % 16 ? 0 : 0xffffffff);
-      sleep_ms(1000);
+      for (uint32_t j = 0x000000ff; j < 0x01000000; j = j << 8) {
+	put_pixel(j);
+	put_pixel(j);
+	sleep_ms(150);
+      }
     }
     printf("\n");
+    
+    // green
+    put_pixel(urgb_u32(0x00, 0xff, 0x00));
+    put_pixel(urgb_u32(0x00, 0xff, 0x00));
     sleep_ms(30*1000);
   }
 
