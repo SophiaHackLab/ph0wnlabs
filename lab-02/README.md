@@ -1,5 +1,7 @@
 # Ph0wn Labs 02
 
+![](../images/lab-02_1.png)
+
 :tada: Welcome to **Ph0wn Labs 02**! 
 
 1. [Installation of Pico SDK for Raspberry Pico](#install-pico-sdk)
