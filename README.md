@@ -1,6 +1,6 @@
 # Ph0wn Labs
 
-- :date: Next session: [**Tuesday, April 1 2025** at 7pm with a **Tutorial on Raspberry Pico RP2040**](./lab-02/README.md)
+- :date: Next session: [**Tuesday, October 2 2025** at 7.15pm with a **Solving challenges with AI**](./lab-04/README.md)
 -  First session: [**Thursday, February 13 2025** at 7pm with a **Tutorial on Radare2**](./lab-01/README.md)
 
 
