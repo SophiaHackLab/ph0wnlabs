@@ -1,7 +1,12 @@
 # Ph0wn Labs
 
 - :date: Next session: [**Tuesday, October 2, 2025** at 7.15pm on **Solving challenges with AI**](./lab-04/README.md)
--  First session: [**Thursday, February 13 2025** at 7pm with a **Tutorial on Radare2**](./lab-01/README.md)
+
+Previous sessions:
+
+1. [February 13, 2025](./lab-01/README.md) on **Tutorial on Radare2**
+2. [April 1, 2025](./lab-02/README.md) on **Embedded programming and CTF challenges**
+3. [June 13 2025](./lab-03/README.md) on **Qiling**
 
 
 
