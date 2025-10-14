@@ -1,0 +1,93 @@
+\documentclass[xcolor=table]{beamer}
+\usetheme{Antibes}
+
+\usepackage[utf8x]{inputenc}
+%\usepackage{helvet}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[outputdir=build]{minted}
+\usepackage{pgfplots}
+\usemintedstyle{monokai}
+\usepackage{tikz}
+\usetikzlibrary{positioning,shapes, arrows,decorations.pathmorphing,mindmap,trees}
+
+\definecolor{softgreen}{RGB}{34, 139, 34} % ForestGreen
+
+% Changer la couleur principale en vert
+\usecolortheme[named=softgreen]{structure}
+
+% Changer le fond de la barre laterale en vert
+\setbeamercolor{sidebar right}{bg=softgreen}
+\setbeamercolor{sidebar left}{bg=softgreen}
+
+% Changer la couleur des titres
+\setbeamercolor{title}{fg=white,bg=softgreen}
+\setbeamercolor{frametitle}{fg=white,bg=softgreen}
+
+
+
+\setbeamertemplate{footline} {
+\hspace{8cm}
+Ph0wn Labs 2025 - A. Apvrille
+\insertframenumber/\inserttotalframenumber
+%\vspace{0.2cm}
+}
+
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\setbeamertemplate{itemize item}[square]
+\setbeamertemplate{enumerate items}[circle]
+
+\setbeamertemplate{navigation symbols}{}
+
+
+
+\hypersetup{
+%      pdfpagemode = FullScreen,% afficher le pdf en plein écran
+      pdfauthor   = {Axelle Apvrille},
+      pdftitle    = {Ph0wn Labs 04},
+      pdfcreator  = {PDFLaTeX},%
+      pdfproducer = {PDFLaTeX},%
+      colorlinks=true
+}
+
+\title{\textbf{Crack Rust with r2ai}}
+\author{Axelle Apvrille}
+\date{Ph0wnLabs, October 21 2025}
+
+\begin{document}
+
+% Title slide ---------------
+\frame[plain]{
+  \titlepage
+}
+
+\frame{
+  \frametitle{Agenda for Ph0wn Lab 04}
+  \begin{itemize}
+
+  \item Explore the Space with our Docking System 
+  \item Do you have the \textit{authorization code}?
+  \item Implemented in Rust
+  \item Reverse it with assistance from AI\\
+    \url{https://github.com/SophiaHackLab/ph0wnlabs/lab-04}
+  \item Bonus: Play ph0wn challenges\\
+    \url{https://ph0wn.shl.contact}
+  \end{itemize}
+}
+
+\frame{
+  \frametitle{Docker container}
+
+  \centering
+  \large
+  Download\\
+  \texttt{docker pull cryptax/ph0wnlabs:4}\\
+  \vspace{0.5cm}
+  Run \\
+  \texttt{docker run -it --rm --name ph0wnlabs-4 cryptax/ph0wnlabs:4}\\
+  \normalsize
+}
+
+\end{document}
+

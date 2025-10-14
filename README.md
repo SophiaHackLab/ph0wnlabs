@@ -1,6 +1,6 @@
 # Ph0wn Labs
 
-- :date: Next session: [**Tuesday, October 2, 2025** at 7.15pm on **Solving challenges with AI**](./lab-04/README.md)
+- :date: Next session: [**Tuesday, October 21, 2025** at 7.15pm on **Crack Rust with r2ai**](./lab-04/README.md)
 
 Previous sessions:
 

@@ -1,0 +1,8 @@
+services:
+  ph0wnlabs-4:
+    build: .
+    container_name: ph0wnlabs-4
+    image: cryptax/ph0wnlabs:4
+    stdin_open: true
+    tty: true
+
