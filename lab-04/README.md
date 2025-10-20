@@ -64,7 +64,7 @@ Authorization failed. Access denied.
 
 > **r2 help**:
 > In r2, to go to a given address/function, use `s ADDR`
-> To *grep` output, use `~WORD`. For example to find all functions that contain the word "main": `afl~main`
+> To *grep* output, use `~WORD`. For example to find all functions that contain the word "main": `afl~main`
 > To disassemble a function: `pdf @ FUNCNAME`, or `s FUNCNAME` and then `pdf`.
 
 > What is the **main of our program**? In many languages (C, Rust...), it's not the entrypoint of the binary, but called a bit later. You shouldn't have too much trouble locating it.
