@@ -8,7 +8,7 @@ It bundles a working r2 and r2ai.
 Then, run the container:
 
 - with docker compose: `docker compose run --rm ph0wnlabs-4`
-- or directly with docker: `docker run -it --rm --name ph0wnlabs-4 cryptax/ph0wnlabs-4`
+- or directly with docker: `docker run -it --rm --name ph0wnlabs-4 cryptax/ph0wnlabs:4`
 
 Alternatives:
 
