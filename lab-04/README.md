@@ -84,9 +84,9 @@ You may want to set the decompiled output to Rust: `r2ai -e lang=rust`.
 
 - **Question 5**. If you can, test this authorization code. If it works, congrats! Most probably though, it will be incorrect... (and that's perfectly normal).
 
-> Not on Linux :penguin:? Perhaps you can run the binary using QEMU + Docker to emulate a foreign architecture [see here](https://forums.docker.com/t/run-x86-intel-and-arm-based-images-on-apple-silicon-m1-macs/117123).
+> **Not on Linux** :penguin:? Perhaps you can run the binary using QEMU + Docker to emulate a foreign architecture [see here](https://forums.docker.com/t/run-x86-intel-and-arm-based-images-on-apple-silicon-m1-macs/117123).
 
-> If you failed to get a source code that produces something that looks like an authorization code, read [`./spoiler/dockcode-main.rs`](./spoiler/dockcode-main.rs) and assume this was returned by your model.
+> **Catch Up!** If you failed to get a source code that produces something that looks like an authorization code, read [`./spoiler/dockcode-main.rs`](./spoiler/dockcode-main.rs) and assume this was returned by your model.
 
 - **Question 6**. Is that incorrect authorization code a hallucination? Check it out in the binary!
 
@@ -104,7 +104,7 @@ You may want to set the decompiled output to Rust: `r2ai -e lang=rust`.
 
 > **r2 help**
 >- Get details on the current calling convention with r2 command `afci`. This tells you in which registers arguments for functions are stored.
->- To move a few bytes before where you are, 
+>- To move a few bytes before where you are, `s-BYTES`.
 >- You may find the visual mode handy to see what happens before string comparison. To switch to visual mode, use `VV`.
 >- Find where variables are read or written with `axv~VARIABLE_NAME`
 
@@ -118,7 +118,7 @@ This fixed string emanates from a character array (in many cases, this is what t
 - **Question 9**. Search for **closures** in our binary. 
 
 > *Hint: search for functions containing the name "dockcode"*.
-> :ant: Don't know what a *closure* is? Ask ChatGPT!
+> Don't know what a *closure* is? Ask ChatGPT.
 
 - **Question 10**. Get the call stack for this closure using command `axg FUNCTION_NAME`. Where is this function called in our main? Is it modifying the fixed string, or the user input?
 - **Question 11**. Use Groq and model `moonshotai/kimi-k2-instruct` and ask for explanations **on the closure**. 
