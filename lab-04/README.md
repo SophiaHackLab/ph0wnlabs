@@ -27,7 +27,7 @@ CONTAINER ID   IMAGE                 COMMAND                  CREATED         ST
 6b7d2c56470b   cryptax/ph0wnlabs:4   "/bin/bash"              6 seconds ago   Up 6 seconds                                                 lab-04-ph0wnlabs-4-run-67bf1d22bfdd
 ...
 $ docker cp ~/.r2ai.groq-key 6b7d2c56470b:/home/work
-Successfully copied 2.05kB to 6b7d2c56470b:.
+Successfully copied 2.05kB to 6b7d2c56470b:/home/work
 ```
 
 
@@ -113,7 +113,7 @@ You should have worked out:
 1. The user input string variable
 2. The fixed string it is compared with.
 
-This fixed string emanates from a character array (in many cases, this is what the AI took for the authorization code at first), but it is modified in a **closure*.
+This fixed string emanates from a character array (in many cases, this is what the AI took for the authorization code at first), but it is modified in a *closure*.
 
 - **Question 9**. Search for **closures** in our binary. 
 
