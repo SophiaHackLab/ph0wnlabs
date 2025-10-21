@@ -17,16 +17,16 @@ Alternatives:
 
 ## API keys :key:
 
-- Get free API keys from [Groq](https://console.groq.com) and put it in a file named `~/.r2ai-groq.key`. 
+- Get free API keys from [Groq](https://console.groq.com) and put it in a file named `~/.r2ai.groq-key`. 
 
-- Share the key with your container: `docker cp ~/.r2ai-groq.key <CONTAINERID>:/home/work`. :warning: **Don't forget to put it in `/home/work`!**
+- Share the key with your container: `docker cp ~/.r2ai.groq-key <CONTAINERID>:/home/work`. :warning: **Don't forget to put it in `/home/work`!**
 
 ```
 $ docker ps
 CONTAINER ID   IMAGE                 COMMAND                  CREATED         STATUS         PORTS                                         NAMES
 6b7d2c56470b   cryptax/ph0wnlabs:4   "/bin/bash"              6 seconds ago   Up 6 seconds                                                 lab-04-ph0wnlabs-4-run-67bf1d22bfdd
 ...
-$ docker cp ~/.r2ai.groq-key 6b7d2c56470b:.
+$ docker cp ~/.r2ai.groq-key 6b7d2c56470b:/home/work
 Successfully copied 2.05kB to 6b7d2c56470b:.
 ```
 
